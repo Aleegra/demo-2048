@@ -5,7 +5,7 @@ metadata:
   namespace: game2048
 spec:
   rules:
-  - host: 2048.inlining.cloud
+  - host: 2048.sealio.net
     http:
       paths:
       - pathType: Prefix
