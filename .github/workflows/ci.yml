@@ -8,7 +8,7 @@ on:
 
 env:
   CI_REGISTRY: ''
-  CI_IMAGE_NAME: liyinlin/game2048
+  CI_IMAGE_NAME: sealdemo/game2048
   CD_WALRUS_PROJECT: demo
   CD_WALRUS_ENV: dev
   CD_WALRUS_SERVICE_NAME: game2048
