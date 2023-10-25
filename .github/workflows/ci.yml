@@ -29,9 +29,9 @@ jobs:
     - name: Docker Login
       uses: docker/login-action@v3.0.0
       with:
-        registry: ${{ env.REGISTRY }}
-        username: ${{ secrets.CI_DOCKERHUB_USERNAME }}
-        password: ${{ secrets.CI_DOCKERHUB_PASSWORD }}
+        registry: ${{ env.CI_REGISTRY }}
+        username: ${{ secrets.CI_REGISTRY_USERNAME }}
+        password: ${{ secrets.CI_REGISTRY_PASSWORD }}
     - name: Build and push Docker image
       run: |
         docker build . --file Dockerfile --tag ${{ env.CI_IMAGE_NAME }}:${{ github.run_id }}
